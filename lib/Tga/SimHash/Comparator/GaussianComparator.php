@@ -63,7 +63,7 @@ class GaussianComparator implements ComparatorInterface
      * @param int $countDifferences
      * @return float
      */
-    protected function computeSimilarityIndex($countDifferences)
+    public function computeSimilarityIndex($countDifferences)
     {
         return $this->gaussianDensity($countDifferences) / $this->gaussianDensity(0);
     }
